@@ -1,0 +1,10 @@
+function carPassing(cars, speed) {
+  const newCar = {
+    time: Date.now(),
+    speed: speed
+  };
+
+  return [...cars, newCar];
+}
+
+const speed = 38
