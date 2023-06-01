@@ -8,6 +8,9 @@
 
   }});
 };*/
+
+
+
 const findWaldo = function (names, found) {
   names.forEach((name, index) => {
     if (name === "Waldo") {
@@ -20,6 +23,8 @@ const findWaldo = function (names, found) {
 const actionWhenFound = (index) => console.log(`Found him ${index}!`);
 
 
-findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], function(index) {
+  console.log("Waldo is located at:", index);
+});
 
 
